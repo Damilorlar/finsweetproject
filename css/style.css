@@ -244,6 +244,11 @@ main .Container .rightside .rating{
 .Parent-flex .Container .right .get-a-quote .one p{
    color:  rgba(30, 27, 27, 1);
    line-height: 28px;
+   border-left: 2px dotted rgba(255, 100, 51, 1) ;
+   margin-left: -30px;
+   margin-top: 10px;
+   padding: 5px 0px 0px 20px;
+   width: 69vh;
 }
 /* what we offer */
 .flex{
