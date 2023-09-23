@@ -1,369 +1,623 @@
 *{
- padding: 0;
- margin: 0;
- box-sizing: border-box;
- font-family: 'Manrope', sans-serif;
-}
-#header{
- width: 80%;
- display: flex;
- column-gap: 10px;
- justify-content: space-between;
- margin: auto;
- padding: 10px 10px;
- background-color: white;
- position: fixed;
- left: 10%;
- z-index: 50;
-}
-.logo h1{
- font-size: 30px;
-}
-nav{ 
- display: flex;
- align-items: center;
- column-gap: 10px;
-}
-nav ul{
- display: flex;
- column-gap: 30px;
- align-items: center;
- border-right: 1px solid gray;
- padding: 5px 20px 0px 5px;
- font-family: 'playfair' sans-serif;
- cursor: pointer;
-}
-nav ul li{
- list-style-type: none;
-}
-nav .rightnav{
- display: flex;
- align-items: center;
- column-gap: 4px;
- padding-left: 9px;
-}
-/* Global  Styling */
-.Parent-flex{
-height: 100vh;
- width: 100%;
- margin: auto;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-}
-.Container{
- height: 80%;
- width: 80%;
- display: flex;
-}
-
-.left{
- width: 50%;
- height: 100%;
-}
-.right{
- width: 50%;
- height: 100%;
-}
-.btn{
-   margin-top:30px ;
-}
-button{
-   width: 21vh;
- border: none;
- border-radius: 5px;
- padding: 0;
- background-color: rgba(255, 100, 51, 1);
- color: white;
- margin-left: 1px;
- font-size: 16px;
- cursor: pointer;
- height: 40px;
-}
-#Car-service{
-   background-color: rgba(128, 128, 128, 0.418);
-   height: 90vh;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Manrope', sans-serif;
   }
-/* End of Global Styling */
-main .Container .leftside .content{
- font-size: 27px;
- margin-top: 55px;
-}
-main .Container .leftside .time{
- display: flex;
- margin-top: 13vh;
- font-size: 20px;
- column-gap: 8px;
-}
-main .Container .leftside .time .timer-icon{
- margin-top: 8px;
-}
-main .Container .leftside .time p{
- color: gray;
-}
-main .Container .rightside{
- background-image: url(../image/image.png);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- position: relative;
-}
-
-main .Container .rightside .Service{
- position: absolute;
- top: 10%;
- left: -5%;
- background-color: rgba(216, 205, 205, 0.473);
- width: 34%;
- height: 73px;
- border-radius: 35px;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-main .Container .rightside .Service .service{
-background-color: #ffffff;
-width: 93% ;
-height: 60px;
-border-radius: 35px;
-display: flex;
-justify-content: center;
-align-items: center;
-column-gap: 10px;
-}
-main .Container .rightside .Service .service .hours p{
- background-color: rgb(92, 186, 153);
- width: 43px;
- height: 38px;
- padding: 5px ;
- border-radius: 50%;
- font-size: 13px;
- display: flex;
- align-items: center;
- justify-content: center;
- color: #ffffff;
-}
-main .Container .rightside .rating{
- position: absolute;
- bottom: -5%;
- right: -17%;
-}
-#Car-service .Container .left .content{
-   font-size: 38px;
-}
-#Car-service .Container .left .one{
-   margin-top: 20px;
-   display: flex;
-   column-gap: 10px;
-}
-#Car-service .Container .left .one .text .p{
-   color:rgba(30,27,27,1);
-}
-#Car-service .Container .left .one .icon{
-   background-color: #ffffff;
-   border-radius: 50%;
-   height: 25px;
-   width: 25px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 5px;
-}
-#Car-service .Container .left .one #one{
-   background-color: black;
-}
-#Car-service .Container .left .Know{
-   margin: 35px;
-}
-#Car-service .Container .right .content{
-   font-size: 32px;
-   padding-left: 10px;
-}
-#Car-service .Container .right form{
-   padding: 10px;
+  #header{
    width: 80%;
-}
-#Car-service .Container .right form input{
-   margin: 1px;
-   height: 45px;
-   width: 80vh;
-   border: none;
-   padding: 10px;
-}
-#btn{
-   margin: 10px;
-}
-.Parent-flex .Container .left .get-a-quote{
-   margin-top: 17vh;
-   font-size: 40px;
-   justify-content: center;
-   align-items: center;
-}
-.Parent-flex .Container .right .get-a-quote {
-   margin-top: 12vh;
-}
-.Parent-flex .Container .left .get-a-quote p{
-   font-size: 18px;
-   color: rgba(30, 27, 27, 1);
-   line-height: 29px;
-}
-.Parent-flex .Container .right .get-a-quote .one {
-   margin-top: 15px;
-   line-height: 40px;
    display: flex;
    column-gap: 10px;
-   padding-left: 10px;
-   font-size: 20px;
-}
-.Parent-flex .Container .right .get-a-quote .icon{
-   background-color: rgb(102,28,231);
-   height: 40px;
-   width: 40px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #ffffff;
-   overflow: hidden;
-}
-.Parent-flex .Container .right .get-a-quote .icon .dot{
-   width:30px ;
-   height: 23px;
-   border-radius: 12rem 12rem 0 0;
-   background-color:  rgba(255, 255, 255, 0.24);
-   ;
-   margin-top: 32px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.Parent-flex .Container .right .get-a-quote .icon .dot .n{
-   margin-top: -40px;
-}
-.Parent-flex .Container .right .get-a-quote .one p{
-   color:  rgba(30, 27, 27, 1);
-   line-height: 28px;
-   border-left: 2px dotted rgba(255, 100, 51, 1) ;
-   margin-left: -30px;
-   margin-top: 10px;
-   padding: 5px 0px 0px 20px;
-   width: 69vh;
-}
-/* what we offer */
-.flex{
- width: 100%;
- margin: auto;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- height: 100vh;
-} 
-#Car-service .head  {
-   text-align: center;
-   width: 100%;
-   margin-top: -30px;
-}
-#Car-service .head .top{
-   font-size: 38px;
-   padding: 0 95px;
-}
-#Car-service .head .several-cards{
-   margin-top: 10px;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 5px;
-   padding-left: 20vh;
-}
-#Car-service .head .several-cards .card{
+   justify-content: space-between;
+   margin: auto;
+   padding: 10px 0;
    background-color: white;
-   height: 130px;
-   width: 200px;
-   justify-content: center;
-   align-items: center;  
-   padding: 20px;
+   position: fixed;
+   /* left: 10%; */
+   z-index: 1000;
+  margin-left: 21vh;
+  }
+  .logo h1{
    font-size: 30px;
-}
-#Car-service .head .several-cards .card .text{
-   margin-top: 10px;
-}
-#Car-service .head .learn{
-  margin-top: 30px;
-  margin-left: 100vh;
-  font-size: 13px;
-
-}
-#Car-service .head .learn span{
-   width: 30px;
-}
-
-/* get in touch */
-#get-in-touch{
-   height: 80vh;
-   width: 100%;
-}
-#get-in-touch .firstrow{
-   height: 75%;
-   font-weight: 100%;
+   /* margin-top: 8px; */
+  }
+  nav{ 
    display: flex;
-}
-#get-in-touch .firstrow .left-car{
+   align-items: center;
+   /* column-gap: 10vh; */
+  }
+  nav ul{
+   display: flex;
+   column-gap: 40px;
+   align-items: center;
+   border-right: 1px solid gray;
+   padding: 5px 20px 0px 5px;
+   font-family: 'playfair' sans-serif;
+   cursor: pointer;
+  }
+  nav ul li{
+   list-style-type: none;
+  }
+  nav .rightnav{
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+   padding-left: 10px;
+  }
+  /* Global  Styling */
+  .Parent-flex{
+  height: 100vh;
+   width: 100%;
+   margin: auto;
+   display: flex;
+   /* flex-direction: column; */
+   align-items: center;
+   justify-content: center;
+  }
+  .Container{
+   height: 80%;
+   width: 80%;
+   display: flex;
+  }
+  
+  .left{
    width: 50%;
    height: 100%;
-   background-image: url(../image/car.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   position: relative;
-   
-}
-#get-in-touch .firstrow .left-car .card{
+   /* background-color: green; */
+  }
+  .right{
+   width: 50%;
    height: 100%;
-   width: 70%;
-   background-color: #ff6433;
-   position: absolute;
-   right: 0;  
-   display: flex;
-   justify-content: center;
-   align-items: center; 
-   color: #ffffff;
-   padding: 0 55px;
-   font-size: 19px;
-}
-#button button{
-   margin: 15px 0 0 5px;
+   /* background-color: goldenrod; */
+  }
+  .btn{
+     margin-top:30px ;
+  }
+  button{
+     width: 21vh;
    border: none;
    border-radius: 5px;
-   background-color: rgb(12, 12, 12);
+   padding: 0;
+   background-color: rgba(255, 100, 51, 1);
+   color: white;
+   margin-left: 1px;
+   font-size: 16px;
+   cursor: pointer;
    height: 40px;
-}
-
-
-#get-in-touch .firstrow .right-car{
-   width: 50%;
-   height: 100%;
-   background-image: url(../image/operator.png);
-   background-repeat: no-repeat;
+  }
+  #Car-service{
+     background-color: rgba(128, 128, 128, 0.418);
+     height: 90vh;
+    }
+  /* End of Global Styling */
+  main .Container .leftside .content{
+   font-size: 27px;
+   margin-top: 55px;
+  }
+  main .Container .leftside .time{
+   display: flex;
+   margin-top: 13vh;
+   font-size: 20px;
+   column-gap: 8px;
+  }
+  main .Container .leftside .time .timer-icon{
+   margin-top: 8px;
+  }
+  main .Container .leftside .time p{
+   color: gray;
+  }
+  main .Container .rightside{
+   background-image: url(../image/image.png);
    background-position: center;
+   background-repeat: no-repeat;
    background-size: cover;
-}
-#get-in-touch .second-row{
-   height: 25%;
-   width: 100%;
+   position: relative;
+  }
+  
+  main .Container .rightside .Service{
+   position: absolute;
+   top: 10%;
+   left: -5%;
+   background-color: rgba(216, 205, 205, 0.473);
+   width: 34%;
+   height: 73px;
+   border-radius: 35px;
    display: flex;
    justify-content: center;
    align-items: center;
-}
-#get-in-touch .second-row .Container{
-   width: 80%;
+  }
+  main .Container .rightside .Service .service{
+  background-color: #ffffff;
+  width: 93% ;
+  height: 60px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  }
+  main .Container .rightside .Service .service .hours p{
+   background-color: rgb(92, 186, 153);
+   width: 43px;
+   height: 38px;
+   padding: 5px ;
+   border-radius: 50%;
+   font-size: 13px;
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   line-height: 30px;
-}
-#get-in-touch .second-row .Container h1{
-   color: rgba(102, 28, 231, 1);
-}
-
- 
+   justify-content: center;
+   color: #ffffff;
+  }
+  main .Container .rightside .rating{
+   position: absolute;
+   bottom: -5%;
+   right: -17%;
+  }
+  #Car-service .Container .left .content{
+     font-size: 42px;
+  }
+  #Car-service .Container .left .one{
+     margin-top: 30px;
+     display: flex;
+     column-gap: 10px;
+  }
+  #Car-service .Container .left .one .text .p{
+     color:rgba(30,27,27,1);
+  }
+  #Car-service .Container .left .one .icon{
+     background-color: #ffffff;
+     border-radius: 50%;
+     height: 25px;
+     width: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px;
+  }
+  #Car-service .Container .left .one #one{
+     background-color: black;
+  }
+  #Car-service .Container .left .Know{
+     margin: 35px;
+  }
+  #Car-service .Container .right .content{
+     font-size: 35px;
+     padding-left: 10px;
+  }
+  #Car-service .Container .right form{
+     padding: 10px;
+     width: 80%;
+  }
+  #Car-service .Container .right form input{
+     margin: 2px;
+     height: 47px;
+     width: 80vh;
+     border: none;
+     padding: 10px;
+  }
+  #btn{
+     margin: 10px;
+  }
+  .Parent-flex .Container .left .get-a-quote{
+     margin-top: 17vh;
+     font-size: 40px;
+     justify-content: center;
+     align-items: center;
+  }
+  .Parent-flex .Container .right .get-a-quote {
+     margin-top: 12vh;
+  }
+  .Parent-flex .Container .left .get-a-quote p{
+     font-size: 18px;
+     color: rgba(30, 27, 27, 1);
+     line-height: 29px;
+  }
+  .Parent-flex .Container .right .get-a-quote .one {
+     margin-top: 15px;
+     line-height: 40px;
+     display: flex;
+     column-gap: 10px;
+     padding-left: 10px;
+     font-size: 20px;
+  }
+  .Parent-flex .Container .right .get-a-quote .icon{
+     background-color: rgb(102,28,231);
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #ffffff;
+     overflow: hidden;
+  }
+  .Parent-flex .Container .right .get-a-quote .icon .dot{
+     width:30px ;
+     height: 23px;
+     border-radius: 12rem 12rem 0 0;
+     background-color:  rgba(255, 255, 255, 0.24);
+     ;
+     margin-top: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  .Parent-flex .Container .right .get-a-quote .icon .dot .n{
+     margin-top: -40px;
+  }
+  .Parent-flex .Container .right .get-a-quote .one p{
+     color:  rgba(30, 27, 27, 1);
+     line-height: 28px;
+     border-left: 2px dotted rgba(255, 100, 51, 1) ;
+     margin-left: -30px;
+     margin-top: 10px;
+     padding: 5px 0px 0px 20px;
+     width: 69vh;
+  }
+  /* what we offer */
+  .flex{
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+  } 
+  #Car-service .head  {
+     text-align: center;
+     width: 100%;
+     margin-top: -30px;
+  }
+  #Car-service .head .top{
+     font-size: 38px;
+     padding: 0 95px;
+  }
+  #Car-service .head .several-cards{
+     margin-top: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5px;
+     padding-left: 20vh;
+  }
+  #Car-service .head .several-cards .card{
+     background-color: white;
+     height: 130px;
+     width: 200px;
+     justify-content: center;
+     align-items: center;  
+     padding: 20px;
+     font-size: 30px;
+  }
+  #Car-service .head .several-cards .card .text{
+     margin-top: 10px;
+  }
+  #Car-service .head .learn{
+    margin-top: 30px;
+    margin-left: 100vh;
+    font-size: 13px;
+  
+  }
+  #Car-service .head .learn span{
+     width: 30px;
+  }
+  
+  /* get in touch */
+  #get-in-touch{
+     height: 80vh;
+     width: 100%;
+  }
+  #get-in-touch .firstrow{
+     height: 75%;
+     font-weight: 100%;
+     display: flex;
+  }
+  #get-in-touch .firstrow .left-car{
+     width: 50%;
+     height: 100%;
+     background-image: url(../image/car.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+     
+  }
+  #get-in-touch .firstrow .left-car .card{
+     height: 100%;
+     width: 70%;
+     background-color: #ff6433;
+     position: absolute;
+     right: 0;  
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     color: #ffffff;
+     padding: 0 55px;
+     font-size: 19px;
+  }
+  #button button{
+     margin: 15px 0 0 5px;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(12, 12, 12);
+     height: 40px;
+  }
+  
+  
+  #get-in-touch .firstrow .right-car{
+     width: 50%;
+     height: 100%;
+     background-image: url(../image/operator.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+  }
+  #get-in-touch .second-row{
+     height: 25%;
+     width: 100%;
+     /* display: flex; */
+     justify-content: center;
+     align-items: center;
+  }
+  #get-in-touch .second-row .Container{
+     width: 80%;
+     /* display: flex; */
+     justify-content: space-between;
+     align-items: center;
+     line-height: 30px;
+     margin:auto;
+  }
+  #get-in-touch .second-row .Container h1{
+     color: rgba(102, 28, 231, 1);
+  }
+  
+  /* media query */
+  @media screen and (max-width:425px) {
+     #header{
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        position: static;
+        /* justify-content: center; */
+     }
+     .logo h1{
+        font-size:18px ;
+        text-align: center;
+     }
+     nav{
+        flex-direction: column;
+     }
+     nav ul{
+        column-gap: 20px;
+        border: none;
+        padding: 10px 0 5px 0;
+     }
+     nav .rightnav {
+        font-size: 13px;
+     }
+     nav .rightnav .right-nav-icon img{
+        width: 20px;
+     }
+     /* global styling */
+     .Parent-flex{
+        height: auto;
+     }
+     .Container{
+        height: auto;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0px 10px;
+        row-gap: 10px;
+     }
+     .left{
+        width: 100%;
+        padding: 20px 0;
+        /* height: ; */
+     }
+     .right{
+        width: 100%;
+        padding: 20px 0;
+        /* height: 80vh; */
+     }
+     .btn{
+        margin-top:30px ;
+     }
+     button{
+        width: 18vh;
+        font-size: 13px;
+        height: 30px;
+     }
+     /* End of global styling */
+     main .Container .leftside{
+        /* margin-bottom: 10px; */
+     }
+     main .Container .leftside .content{ 
+        font-size: 15px;
+        margin-top: 0;
+        
+       }
+       main .Container .leftside .time{
+        display: flex;
+        margin-top: 5vh;
+        font-size: 20px;
+        column-gap: 6px;
+       }
+       main .Container .leftside .time .timer-icon img{
+        margin-top: 2px;
+        width: 22px;
+       }
+       main .Container .rightside{
+        height: 40vh;
+       }
+       main .Container .rightside .Service{
+        width: 46%;
+        height: 50px;
+        
+       }
+       main .Container .rightside .Service .service{
+       width: 93% ;
+       height: 43px;
+       }
+       main .Container .rightside .Service .service .hours p{
+        width: 30px;
+        height: 28px;
+        font-size: 8px;
+       }
+       main .Container .rightside .Service .service .quick h4{
+        font-size: 12px;
+       }
+       /* Car-service */
+     #Car-service .Container .right{
+        height: 100vh;
+        margin-top: 58vh;
+     }
+       
+     #Car-service .Container .right .content{
+        margin-top: -7vh;
+        font-size: 20px;
+        padding-left: 10px;
+     }  
+     #Car-service .Container .right form input{
+        /* margin: 1px; */
+        height: 40px;
+        width: 40vh;
+     }
+     #Car-service .Container .left{
+        margin-top: -70vh;
+        height: 100vh;
+     }
+     #Car-service .Container .left .content{
+        font-size: 18px;
+        padding-left: 1px;
+     }
+     #Car-service .Container .left .one{
+        margin-top: 13px;
+     }
+     #Car-service .Container .left .one .icon{
+        margin-left: 5px;
+     }
+     #Car-service .Container .left .Know{
+        margin-top: 15px;
+     }
+     /* get a quote */
+     .Parent-flex .Container .right .get-a-quote {
+        margin-top: 2vh;
+        /* margin-right: 10px; */
+     }
+  
+     .Parent-flex .Container .right .get-a-quote .one {
+        margin-top: 25px;
+        line-height: 14px;
+        column-gap: 10px;
+        padding-left: 0px;
+        font-size: 18px;
+     }
+     .Parent-flex .Container .right .get-a-quote .icon{
+        height: 40px;
+        width: 40px;
+        overflow:visible;
+        margin-left: -4px;
+        margin-top: -10px;
+     }
+     .Parent-flex .Container .right .get-a-quote .icon .dot{
+        width:30px ;
+        height: 13px;
+     }
+     .Parent-flex .Container .right .get-a-quote .icon .dot .n{
+        margin-top: -30px;
+     }
+     .Parent-flex .Container .right .get-a-quote .one p{
+        margin-left: -25px;
+        margin-top: 22px;
+        padding: 0 0 0 15px;
+        font-size: 16px;
+        
+     }
+     .Parent-flex .Container .left .get-a-quote{
+        margin-top: 3vh;
+        font-size: 30px;
+     }
+     .Parent-flex .Container .left .get-a-quote p{
+        font-size: 14px;
+        margin-top: 10px;
+        /* width: 100%; */
+     }
+     /*  What we offer*/
+     .flex{
+        
+       } 
+       #Car-service .head  {
+          margin-top: 5vh;
+       }
+       #Car-service .head .top{
+          font-size: 16px;
+          padding: 0 45px;
+       }
+       #Car-service .head .top h3{
+        font-size: 18px;
+       }
+       #Car-service .head .several-cards{
+          
+          gap: 10px;
+          padding: 0 5vh;
+       }
+       #Car-service .head .several-cards .card{
+          height: 120px;
+          width: 130px;
+          padding: 30px;
+          font-size: 20px;
+       }
+       #Car-service .head .learn{
+         margin-top: 20px;
+         margin-left: 15vh;
+         font-size: 10px;
+       }
+       /* get-in-touch */
+       #get-in-touch{
+        height: 80vh;
+        width: 100%;
+     }
+     #get-in-touch .firstrow{
+        height: 75%;
+        font-weight: 100%;
+        flex-direction: column-reverse;
+     }
+     #get-in-touch .firstrow .left-car{
+        width: 100%;
+        height: 80%;
+     }
+     #get-in-touch .firstrow .left-car .card{
+        padding: 0 20px;
+        font-size: 15px;
+     }
+     #button button{
+        margin: 20px 0 0 5px;
+        height: 30px;
+        width: 15vh;
+     }
+     #get-in-touch .firstrow .right-car{
+        width: 100%;
+        height: 80%;
+     }
+     #get-in-touch .second-row{
+     height: auto;
+     }
+     #get-in-touch .second-row .Container{
+     flex-direction: inherit;
+     margin: auto;
+     font-size: 10px;
+     
+     line-height: 15px;
+     margin-left: 20px;
+     
+  }
+  #get-in-touch .second-row .Container .one{
+     padding: 15px;
+     font-size: 10px;
+     
+  }
+  
+  }
+  
+  
+  
