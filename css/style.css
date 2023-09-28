@@ -53,11 +53,13 @@
    /* flex-direction: column; */
    align-items: center;
    justify-content: center;
+   /* background-color: aqua; */
   }
   .Container{
    height: 80%;
    width: 80%;
    display: flex;
+   /* background-color: red; */
   }
   
   .left{
@@ -148,10 +150,30 @@
    justify-content: center;
    color: #ffffff;
   }
-  main .Container .rightside .rating{
+  main .Container .rightside .Rating{
    position: absolute;
-   bottom: -5%;
-   right: -17%;
+   bottom: 5%;
+   right: -5%;
+   background-color: rgba(216, 205, 205, 0.473);
+   width: 34%;
+   height: 73px;
+   border-radius: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  main .Container .rightside .Rating .rating{
+  background-color: #ffffff;
+  width: 93% ;
+  height: 60px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  }
+  main .Container .rightside .Rating .rating .rate{
+   font-size: 10px;
   }
   #Car-service .Container .left .content{
      font-size: 42px;
@@ -342,8 +364,6 @@
      background-color: rgb(12, 12, 12);
      height: 40px;
   }
-  
-  
   #get-in-touch .firstrow .right-car{
      width: 50%;
      height: 100%;
@@ -355,13 +375,12 @@
   #get-in-touch .second-row{
      height: 25%;
      width: 100%;
-     /* display: flex; */
      justify-content: center;
      align-items: center;
+     background-color: rgba(216, 205, 205, 0.473);
   }
   #get-in-touch .second-row .Container{
      width: 80%;
-     /* display: flex; */
      justify-content: space-between;
      align-items: center;
      line-height: 30px;
@@ -370,19 +389,193 @@
   #get-in-touch .second-row .Container h1{
      color: rgba(102, 28, 231, 1);
   }
+  /* brands we serve */
+  #Brands{
+     height: 60vh;
+  }
+  #Brands .brands-top{
+     text-align: center;
+     width: 100%; 
+  }
+  #Brands .brands-top .top{
+     margin: 40px;
+  }
+  /* customer review */
+  #review{
+     background-color: rgba(216, 205, 205, 0.473);
+     height: 80vh;
+  }
+  .Review{
+     height: 80%;
+     width: 80%;
+  }
+  #review .top{
+     width: 50%;
+     margin: 0 25%  ;
+     text-align: center;
+  }
+  #review .top .content{
+     font-size: 25px;
+  }
+  #review .bottom{
+     margin-top: 20px;
+     height: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 40px;
+  }
+  .Review .bottom .leftside{
+     background-color: #ffffff;
+     width: 45%;
+     border: none;
+     border-radius: 2px;
+     padding: 40px 40px;
+  }
+  .Review .bottom .leftside .Top{
+     display: flex;
+     column-gap: 10px;
+  }
+  .Review .bottom .leftside .Bottom h3{
+     margin-top: 20px;
+  }
+  .Review .bottom .rightside{
+     background-color: #ffffff;
+     width: 45%;
+     border: none;
+     border-radius: 2px;
+     padding: 40px 40px;
+  }
+  .Review .bottom .rightside .Top{
+     display: flex;
+     column-gap: 10px;
+  }
+  .Review .bottom .rightside .Bottom h3{
+     margin-top: 20px;
+  }
+  .Review .slides{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 15px;
+     
+  }
+  .Review .slides .img1{
+     margin-left: 76vh;
+  }
+  .Review .slides .img2{
+     margin-left: 50vh;
+  } 
+  /* questions */
+  #questions{
+     background-color:rgba(226, 230, 233, 1);
+  }
+  #questions .ctn{
+     height: 80%;
+     width: 50%;
+  }
+  #questions .ctn .top{
+     text-align: center;
+     font-size: 20px;
+  }
+  #questions .bottom .list-group{
+     margin-top: 8vh;
+  }
+  #questions .bottom .list{
+     font-size: 15px;
+     padding: 13px;
+     background-color: #ffffff;
+  }
+  #questions .bottom  .my-list{
+     list-style-type: none;
+     display: flex;
+     justify-content: space-between;
+  }
+  #questions .bottom  .my-list .dash{
+     background: rgba(255, 100, 51, 1);
+     margin-right: 30px;
+     height: 25px;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     color: #ffffff;
+  }
+  #questions .bottom .list .txt{
+     width: 70%;
+     font-size: 13px;
+     padding: 10px 0 ;
+     color: rgba(147, 145, 145, 1);
+  }
+  #questions .bottom #lst{
+     font-size: 15px;
+     padding: 16px;
+     background-color: #ffffff;
+     margin-top: 5px;
+  }
+  #questions .bottom  #lst .dash{
+     margin-right: 23px;
+  }
+  /* footer */
+  #FOOT{
+     background-color: black;
+     height: 60vh;
+  }
+  #FOOT .footer{
+     width: 80%;
+     height: 100%;
+  }
+  #FOOT .footer .top{
+     height: 70%;
+     display: flex;
+  }
+  #FOOT .footer .top .left .content{
+     color: #ffffff;
+     font-size: 28px;
+     width: 60%;
+     margin-top: 50px;
+  }
+  #FOOT .footer .top .left .social{
+     margin-top: 30px;
+     display: flex;
+     column-gap: 10px;
+  }
+  #FOOT .footer .top .right .Info{
+     margin-top: 50px;
+  } 
+  #FOOT .footer .top .right .info {
+     color: rgba(255, 255, 255, 1);
+     margin-top: 10px;
+  }
   
+  #FOOT .footer .bottom{
+     height: 20%;
+     display: flex;
+     justify-content: space-between;
+     color: rgba(255, 255, 255, 1);
+  }
+  #FOOT .footer .bottom .logo{
+     margin-top: 22px;
+  }
+  #FOOT .footer .bottom nav ul{
+     margin-right: 20vh;
+     border: none;
+  }
+  #FOOT .footer .bottom nav .rightnav{
+     margin-top: 3px;
+  
+  }
   /* media query */
-  @media screen and (max-width:425px) {
-   body{
-      overflow-x: hidden;
-      overflow-y: scroll;
-   }
+  @media screen and (max-width:429px) {
+     body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+     }
      #header{
         width: 100%;
         margin-left: 0;
         flex-direction: column;
         position: static;
-        /* justify-content: center; */
      }
      .logo h1{
         font-size:18px ;
@@ -416,12 +609,11 @@
      .left{
         width: 100%;
         padding: 20px 0;
-        /* height: ; */
+        width: auto;
      }
      .right{
         width: 100%;
         padding: 20px 0;
-        /* height: 80vh; */
      }
      .btn{
         margin-top:30px ;
@@ -435,7 +627,6 @@
      main .Container .leftside .content{ 
         font-size: 15px;
         margin-top: 0;
-        
        }
        main .Container .leftside .time{
         display: flex;
@@ -448,12 +639,11 @@
         width: 22px;
        }
        main .Container .rightside{
-        height: 40vh;
+        height: 40vh; 
        }
        main .Container .rightside .Service{
         width: 46%;
-        height: 50px;
-        
+        height: 50px; 
        }
        main .Container .rightside .Service .service{
        width: 93% ;
@@ -467,6 +657,18 @@
        main .Container .rightside .Service .service .quick h4{
         font-size: 12px;
        }
+       main .Container .rightside .Rating{
+         width: 46%;
+         height: 50px; 
+         right: 1%;
+        }
+        main .Container .rightside .Rating .rating{
+        width: 93% ;
+        height: 43px;
+        }
+        main .Container .rightside .Rating .rating .rate{
+         font-size: 8px;
+        }
        /* Car-service */
      #Car-service .Container .right{
         height: 100vh;
@@ -479,6 +681,7 @@
         padding-left: 10px;
      }  
      #Car-service .Container .right form input{
+      
         height: 40px;
         width: 40vh;
      }
@@ -496,25 +699,29 @@
      #Car-service .Container .left .one .icon{
         margin-left: 5px;
      }
+     #Car-service .Container .left .text{
+        line-height: 25px;
+     }
      #Car-service .Container .left .Know{
         margin-top: 15px;
      }
      /* get a quote */
      .Parent-flex .Container .right .get-a-quote {
+        width: 100%;
         margin-top: 2vh;
      }
+     
      .Parent-flex .Container .right .get-a-quote .one {
         margin-top: 25px;
         line-height: 14px;
         column-gap: 10px;
-        padding-left: 0px;
+
         font-size: 18px;
      }
      .Parent-flex .Container .right .get-a-quote .icon{
         height: 40px;
         width: 40px;
         overflow:visible;
-        margin-left: -4px;
         margin-top: -10px;
      }
      .Parent-flex .Container .right .get-a-quote .icon .dot{
@@ -525,10 +732,10 @@
         margin-top: -30px;
      }
      .Parent-flex .Container .right .get-a-quote .one p{
-        margin-left: -25px;
         margin-top: 22px;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 10px;
         font-size: 16px;
+        width: 45vh;
         
      }
      .Parent-flex .Container .left .get-a-quote{
@@ -538,7 +745,7 @@
      .Parent-flex .Container .left .get-a-quote p{
         font-size: 14px;
         margin-top: 10px;
-        /* width: 100%; */
+        
      }
      /*  What we offer*/
        #Car-service .head  {
@@ -551,9 +758,10 @@
        #Car-service .head .top h3{
         font-size: 18px;
        }
-       #Car-service .head .several-cards{
+       #Car-service .head .several-cards{    
           gap: 10px;
-          padding-left: 9vh;
+          padding: 0 5vh;
+          margin-left: 17px;
        }
        #Car-service .head .several-cards .card{
           height: 120px;
@@ -563,7 +771,7 @@
        }
        #Car-service .head .learn{
          margin-top: 20px;
-         margin-left: 15vh;
+         margin-left: 19vh;
          font-size: 10px;
        }
        /* get-in-touch */
@@ -595,12 +803,12 @@
      }
      #get-in-touch .second-row{
      height: auto;
+     margin-top: 0px;
      }
      #get-in-touch .second-row .Container{
      flex-direction: inherit;
      margin: auto;
      font-size: 10px;
-     
      line-height: 15px;
      margin-left: 20px;
      
@@ -608,64 +816,265 @@
   #get-in-touch .second-row .Container .one{
      padding: 15px;
      font-size: 10px;
-     
+  }
+  /* Brand we serve */
+  #Brands{
+     height: 25vh;
+  }
+  #Brands .brands-top{
+   margin-top: -70px;
+  }
+  /* customer service */
+  #review .top .content{
+     font-size: 12px; 
+  }
+    
+  #review .bottom{
+     margin-top: 50px;
+     flex-direction: column;   
+  }
+  .Review .bottom .leftside{
+     width: 100%;
+     padding: 20px 20px;
+     font-size: 12px;
+  }
+  .Review .bottom .leftside .Bottom h3{
+     margin-top: 5px;
+  }
+  .Review .bottom .rightside{
+     width: 100%;
+     padding: 20px 20px;
+     margin-top: 15px;
+     font-size: 12px;
+  }
+  .Review .bottom .rightside .Bottom h3{
+     margin-top: 5px;
+  }
+  .Review .slides{
+     margin-top: 45px;  
+  }
+  .Review .slides .img1{
+     margin-left: 1vh;
+  }
+  .Review .slides .img2{
+     margin-left: 10vh;
+     margin-top: 20px;
+  } 
+  /* questions */
+  #questions{
+     height: 57vh;
+  }
+  #questions .ctn{
+     height: 90%;
+     width: 85%;
+  }
+  #questions .ctn .top{
+     text-align: center;
+     font-size: 10px;
+     margin-top: 10px;
+  }
+  #questions .bottom .list-group{
+     margin-top: 2vh;
+  }
+  #questions .bottom .list{
+     font-size: 10px;
+     padding: 12px;
+  }
+  #questions .bottom  .my-list .dash{
+     margin-right: 15px;
+     height: 20px;
+     padding: 10px;
+  }
+  #questions .bottom .list .txt{
+     font-size: 10px;
+     padding: 5px 0 ;
+   
+  }
+  #questions .bottom #lst{
+     font-size: 8px;
+     padding: 14px;  
+  }
+  #questions .bottom  #lst .dash{
+     margin-right: 12px;
+  }
+  /* footer */
+  #FOOT{
+     height: 40vh;
+  }
+  #FOOT .footer .top .left .content{
+     font-size: 15px;
+     margin-top: 25px;
+     width: 80%;
+  }
+  #FOOT .footer .top .left .social{
+     column-gap: 5px;
+     margin-top: 20px;
+  }
+  #FOOT .footer .top .right .Info{
+     margin-top: 25px;
+  } 
+  #FOOT .footer .top .right .info {
+     margin-top: 10px;
+     font-size: 11px;
+     margin-left: 25px;
+  }
+  #FOOT .footer .top .right .info h2{
+     font-size: 12px;
+  }
+  #FOOT .footer .bottom{
+     height: 20%;
+     display: flex;
+     justify-content: space-between;
+     /* color: rgba(255, 255, 255, 1); */
+  }
+  #FOOT .footer .bottom .logo{
+     margin-top: 15px;
+  }
+  #FOOT .footer .bottom .logo h1{
+     font-size: 12px;
+  }
+  #FOOT .footer .bottom nav ul{
+     margin-left: 6vh;
+     font-size: 10px;
+     column-gap: 20px;
+  }
+  #FOOT .footer .bottom nav{
+     flex-direction: column;
+  }
+  #FOOT .footer .bottom nav .rightnav{
+     margin-right: 28vh;
+  }
   }
   
-  }
   @media screen and (max-width:375px) {
-   body{
-      overflow-x: hidden;
-      overflow-y: scroll;
-   }
-     /* Car-service */
-   #Car-service .Container .right{
-      height: 100vh;
-      margin-top: 55vh;
-   }
-   #Car-service .Container .left{
-      margin-top: -66vh;
-      height: 100vh;
-   }
-   #Car-service .Container .right form input{
-      width:38vh ;
-   }
-   /* get a quote */   
-   .Parent-flex .Container .left .get-a-quote{
-      margin-top: -3vh;
-   }
-   /*  What we offer*/
-     #Car-service .head  {
-        margin-top: -10vh;
+     body{
+        overflow-x: hidden;
+        overflow-y: scroll;
      }
-     #Car-service .head .several-cards{
-      padding-left: 7vh;
+     main .Container .rightside{
+        height: 35vh; 
+       }
+       main .Container .rightside .Rating{
+         bottom: 8%;
+        }
+        main .Container .rightside .Rating .rating .rate{
+         font-size: 7px;
+        }
+       main .Container .leftside{
+        height: 48vh;
+       }
+       /* Car-service */
+     #Car-service .Container .right{
+        margin-top: 51vh;
      }
-     #Car-service .head .several-cards .card{
-        height: 100px;
-        width: 118px;
-        padding: 30px;
-        font-size: 18px;
+     #Car-service .Container .left{
+        margin-top: -68vh;
      }
-     #Car-service .head .learn{
-       margin-left: 17vh;
+     #Car-service .Container .left .content{
+        font-size: 17px;
+        margin-left: 10px;
      }
-     /* get-in-touch */
-   #get-in-touch .firstrow .left-car .card{
-      padding: 0 20px;
-      font-size: 15px;
-   }
-   #get-in-touch .second-row{
-   height: auto;
-   margin-top: 20px;
-   margin-left: -10px;
-   }
-   .flex2{
-      background-color: red;
-   }
-
-
-}
-
+     #Car-service .Container .left .one{
+        margin-top: 10px;
+     }
+     #Car-service .Container .left .text{
+        line-height: 22px;
+     }
+     #Car-service .Container .left .Know{
+        margin-top: 10px;
+     }
+     #Car-service .Container .right form input{
+        width:38vh ;
+     }
+     /* get a quote */   
+     .Parent-flex .Container .left .get-a-quote{
+        margin-top: -3vh;
+     }
+     /*  What we offer*/
+       #Car-service .head  {
+          margin-top: -10vh;
+       }
+       #Car-service .head .several-cards .card{
+          height: 100px;
+          width: 118px;
+          padding: 30px;
+          font-size: 18px;
+       }
+       #Car-service .head .learn{
+         margin-left: 17vh;
+       }
+       /* get-in-touch */
+     #get-in-touch .firstrow .left-car .card{
+        padding: 0 20px;
+        font-size: 15px;
+     }
+     #get-in-touch .second-row{
+     height: auto;
+     margin-top: 0px;
+     margin-left: -10px;
+     }
+     #Brands .brands-top{
+      margin-top: -50px;
+     }
+     /* customer review */
+     #review .top .content{
+        font-size: 11px; 
+     }
+     #review .bottom{
+        margin-top: 75px;
+     }
+     .Review .bottom .rightside{
+        margin-top: 10px;    
+     }
+     .Review .slides{
+        margin-top: 73px;    
+     }
   
+     .Review .slides .img2{
+        margin-left: 15vh;
+        margin-top: 10px;
+     } 
+  /* questions */
+  #questions{
+     height: 60vh;
+  }
+  #questions .ctn{
+     width: 90%;
+  }
+  #questions .bottom  .my-list .dash{
+     margin-right: 8px;
+  }
   
+  #questions .bottom  #lst .dash{
+     margin-right: 5px;
+  }
+  #FOOT{
+     height: 40vh;
+  }
+  #FOOT .footer .top .left .content{
+     font-size: 13px;
+     margin-top: 10px;
+  }
+  #FOOT .footer .top .right .Info{
+     margin-top: 10px;
+  } 
+  #FOOT .footer .top .right .info h2{
+     font-size: 11px;
+  }
+  #FOOT .footer .bottom .logo{
+     margin-top: 15px;
+  }
+  #FOOT .footer .bottom .logo h1{
+     font-size: 12px;
+  }
+  #FOOT .footer .bottom nav ul{
+     font-size: 9px;
+     column-gap: 15px;
+     margin-left: 5vh;
+  }
+  #FOOT .footer .bottom nav .rightnav{
+     margin-right: 28vh;
+  }
+  
+  }
   
