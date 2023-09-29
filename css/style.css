@@ -305,7 +305,7 @@
   #Car-service .head .several-cards .card{
      background-color: white;
      height: 130px;
-     width: 200px;
+     width: 210px;
      justify-content: center;
      align-items: center;  
      padding: 20px;
@@ -316,7 +316,7 @@
   }
   #Car-service .head .learn{
     margin-top: 30px;
-    margin-left: 100vh;
+    margin-left: 88vh;
     font-size: 13px;
   
   }
@@ -568,8 +568,8 @@
   /* media query */
   @media screen and (max-width:429px) {
      body{
-        overflow-x: hidden;
-        overflow-y: scroll;
+        /* overflow-x: hidden; */
+        /* overflow-y: scroll; */
      }
      #header{
         width: 100%;
@@ -922,34 +922,31 @@
      font-size: 12px;
   }
   #FOOT .footer .bottom{
-     height: 20%;
-     display: flex;
-     justify-content: space-between;
-     /* color: rgba(255, 255, 255, 1); */
-  }
-  #FOOT .footer .bottom .logo{
-     margin-top: 15px;
+   width: 44vh;
   }
   #FOOT .footer .bottom .logo h1{
-     font-size: 12px;
-  }
-  #FOOT .footer .bottom nav ul{
-     margin-left: 6vh;
-     font-size: 10px;
-     column-gap: 20px;
+   font-size: 13px;
+   margin-top: -5px;
   }
   #FOOT .footer .bottom nav{
-     flex-direction: column;
+   width: 30vh;
+   margin-right: 20px;
+  }
+  #FOOT .footer .bottom nav ul{
+   font-size: 11px;
+   column-gap: 15px;
+   margin-left: 18vh;
   }
   #FOOT .footer .bottom nav .rightnav{
-     margin-right: 28vh;
+  margin: 10px 10vh 0 0;
+  font-size: 12px;
   }
   }
   
   @media screen and (max-width:375px) {
      body{
-        overflow-x: hidden;
-        overflow-y: scroll;
+        /* overflow-x: hidden; */
+        /* overflow-y: scroll; */
      }
      main .Container .rightside{
         height: 35vh; 
@@ -990,6 +987,10 @@
      .Parent-flex .Container .left .get-a-quote{
         margin-top: -3vh;
      }
+     .Parent-flex .Container .right .get-a-quote .one p{
+      width: 42vh;
+     }
+
      /*  What we offer*/
        #Car-service .head  {
           margin-top: -10vh;
@@ -1061,20 +1062,26 @@
   #FOOT .footer .top .right .info h2{
      font-size: 11px;
   }
-  #FOOT .footer .bottom .logo{
-     margin-top: 15px;
+  #FOOT .footer .bottom{
+   width: 41vh;
   }
   #FOOT .footer .bottom .logo h1{
-     font-size: 12px;
+   font-size: 11px;
+   margin-top: -5px;
+   width: 10vh;
+  }
+  #FOOT .footer .bottom nav{
+   width: 29vh;
+   margin-right: 6px;
   }
   #FOOT .footer .bottom nav ul{
-     font-size: 9px;
-     column-gap: 15px;
-     margin-left: 5vh;
+   font-size: 10px;
+   column-gap: 14px;
+   margin-left: 18vh;
   }
   #FOOT .footer .bottom nav .rightnav{
-     margin-right: 28vh;
+  font-size: 9px;
+  margin-right: 12vh;
   }
-  
-  }
+}
   
